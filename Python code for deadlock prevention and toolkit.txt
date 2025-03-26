@@ -276,7 +276,7 @@ class DeadlockToolkit:
         plt.tight_layout()
         plt.show()
 
-if __name__ == "__main__":  # Fixed entry point with double underscores
+if __name__ == "__main__":  # Fixed entry point with double underscoresjj
     root = tk.Tk()
     app = DeadlockToolkit(root)
     root.mainloop()
