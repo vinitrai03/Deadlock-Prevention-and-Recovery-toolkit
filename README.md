@@ -102,8 +102,11 @@ While all this is happening, the toolkit’s dashboard keeps you posted. Think o
 
 Why Choose This Toolkit?
 a>Lightweight: Minimal overhead, suitable for both small and large-scale systems.
+
 b>Extensible: Easily integrate with existing Python applications or extend with custom algorithms.
+
 c>Educational: Ideal for learning deadlock concepts with hands-on examples.
+
 d>Reliable: Built with proven concurrency management techniques.
 
 Future Enhancements:
