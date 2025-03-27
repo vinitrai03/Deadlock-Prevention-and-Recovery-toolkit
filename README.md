@@ -25,15 +25,18 @@ Core Components:
    a>Monitors resource requests and availability in real-time.
    b>Implements the Banker’s Algorithm to ensure safe resource allocation and prevent deadlocks.
    c>Supports customizable resource types (e.g., threads, memory, I/O devices).
-2. Deadlock Detection Engine:
+   
+3. Deadlock Detection Engine:
    a>Constructs a Wait-For Graph to identify circular dependencies among processes.
    b>Uses efficient cycle-detection algorithms to pinpoint deadlocks.
    c>Alerts users with detailed diagnostic information, including involved processes and resources.
-3. Recovery Module:
+   
+4. Recovery Module:
    a>Automated Recovery: Terminates low-priority processes or rolls back resource allocations to break deadlocks.
    b>Manual Recovery: Allows users to intervene by selecting processes to terminate or resources to release.
    c>Ensures minimal data loss and system downtime during recovery.
-4. Monitoring Dashboard:
+   
+6. Monitoring Dashboard:
    a>Real-time visualization of process states, resource usage, and potential deadlock risks.
    b>Exports logs in human-readable formats (e.g., JSON, CSV) for post-analysis.
 
