@@ -1,4 +1,4 @@
-# algorithms.py: Contains deadlock detection, prevention, and recovery functions
+# algorithms.py
 import numpy as np
 import networkx as nx
 
@@ -37,7 +37,8 @@ class DeadlockToolkit:
             if not found:
                 return False, "System is unsafe: No safe sequence exists."
         
-        return True, f"System is safe. Safe sequence: {safe_sequence}"
+        # Updated line with newline for better readability
+        return True, f"System is safe.\nSafe Sequence: {safe_sequence}"
 
     def detect_deadlock(self):
         """Detect deadlocks using resource allocation graph."""
