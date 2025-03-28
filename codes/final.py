@@ -40,7 +40,8 @@ class DeadlockToolkit:
             if not found:
                 return False, "System is unsafe: No safe sequence exists."
         
-        return True, f"System is safe. Safe sequence: {safe_sequence}"
+        # Emphasize safe sequence in output
+        return True, f"System is safe.\nSafe Sequence: {safe_sequence}"
 
     def detect_deadlock(self):
         """Detect deadlocks using resource allocation graph."""
@@ -186,7 +187,7 @@ class DeadlockGUI:
         self.resource_info.insert(END, f"Allocation:\n{self.toolkit.allocation}")
 
     def check_bankers_safety(self):
-        """Display safety check result with safe sequence."""
+        """Display safety check result with safe sequence prominently."""
         safe, message = self.toolkit.bankers_safety_check()
         self.status.delete(1.0, END)
         self.status.insert(END, message)
@@ -237,7 +238,7 @@ def visualize_graph(toolkit):
     plt.title("Resource Allocation Graph")
     plt.show()
 
-# --- Main Execution ---
+# Main Execution 
 if __name__ == "__main__":
     root = Tk()
     gui = DeadlockGUI(root)
